@@ -5,6 +5,10 @@ body {
 .navbar, .navbar-brand {
     color: skyblue;
 }
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+}
 footer {
     color: skyblue;
 }
