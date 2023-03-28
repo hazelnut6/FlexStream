@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+}
+#first-row {
+height: 33rem;
+}
+.navbar, .navbar-brand {
+color: skyblue;
+}
+.search-column {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/bg.jpg);
+background-size: 100% 100%;
+}
+#search {
+    margin-top: 210px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.me-2 {
+    background-color: #FFEBB9;
+}
+#my-list {
+    color: black;
+    font-size: 33px;
+    font-weight: bold;
+    background-color: #008189;
+}
+.cap {
+color: skyblue;
+font-size: 22px;
+margin-left: 10px;
+}
+.card {
+    width: 280px;
+    height: 340px;
+    padding: 2rem 1rem;
+    background: #000;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s, ease-in-out;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 340px;
+    background: linear-gradient(to bottom, rgb(38, 57, 66), rgb(105, 154, 173), skyblue);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover::before {
+    opacity: .9;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .info {
+    position: absolute;
+    top: 160px;
+    left: 85px;
+    z-index: 3;
+    color: #000;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .info h1 {
+    margin: 0;
+}
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.card .info .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5)
+}
