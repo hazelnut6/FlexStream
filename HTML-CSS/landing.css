@@ -30,6 +30,9 @@ body {
      display: none;
 }
 
+.row_posterLarge {
+    max-height: 250px;
+}
 
 
   /* FREQUENTLY ASKED QUESTION */
