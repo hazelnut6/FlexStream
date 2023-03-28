@@ -2,7 +2,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Images/bg.jpg);
     background-size: cover;
  }
-#checkbox {
-    padding: 40px;
-    width: 5%;
+
+input {
+    width: 25px;
+    height: 25px;
 }
