@@ -11,3 +11,7 @@ footer {
 i {
     text-decoration: underline;
 }
+
+video {
+    object-fit: cover;
+}
