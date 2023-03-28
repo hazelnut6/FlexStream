@@ -1,104 +1,304 @@
-* {
-   margin: 0;
-   box-sizing: border-box;
-}
 body {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: rgba(8, 8, 8, 0.936);
-}
-
-.row_poster {
-    width: 100%;
-    object-fit: contain;
-    max-height: 100px;
-    margin-right: 10px;
-    transition: transform 450ms;
-}
-
-.row_poster {
-     display: flex;
-     overflow-y: hidden;
-     overflow-x: scroll;
-     padding: 20px;
-}
-
-.row_poster:hover{
-    transform: scale(1.08);
-}
-
-.row_poster::-webkit-scrollbar{
-     display: none;
-}
-
-.row_posterLarge {
-    max-height: 250px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(8, 8, 8, 0.89);
 }
 
 
-  /* FREQUENTLY ASKED QUESTION */
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  align-self: center;
+}
+.navbar li {
+  margin: 0 50px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.navbar li:nth-child(2) {
+  margin-top: -10px;
+  margin-right: 70px;
+}
 
 
-  .question {
-    width: 100%;
-    min-height: 950px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-  }
-  
-  .question h1 {
-    text-align: center;
-    color: white;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .quest {
-    width: 51%;
-    min-height: 75px;
-    background-color: #006b86;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    text-align: left;
-    flex-direction: row;
-    margin: 5px 0;
-  }
-  
-  .quest .textbox {
-    display: flex;
-    text-align: left;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-self: center;
-    font-size: 25px;
-    margin: 0 30px;
-    word-spacing: 5px;
-    text-align: left;
-  }
-  
-  
-  /* FOOTER */
-  footer {
-    padding: 20px;
-    text-align: center;
-    color: var(--dark);
-    margin: 10px;
-  }
+/* FLEXSTREAM BUTTON */
+.logo img {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+/* SIGN IN BUTTON */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.buttons {
+  background-color: #15c7d7;
+  padding: 7px 17px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  border-radius: 3px;
+}
+.buttons:hover {
+  transition: transform .2s;
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);  
+  transform: scale(1.10);
+}
+
+/* MAIN BACKGROUND */
+.main {
+  width: 100%;
+  margin-top: -100px;
+  background-size: cover;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center;
+  display: flex;
+  background-position: center;
+  min-height: 710px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+
+/* UNLIMITD MOVIES, TV etc. */
+.area {
+  color: rgb(255, 247, 234);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+.area h1 {
+  font-size: 60px;
+  word-spacing: 15px;
+  line-height: 75px;
+}
+.area h3 {
+  margin-top: -30px;
+  font-size: 27px;
+  font-weight: normal;
+}
+
+
+/* EMAIL BAR */
+.search {
+  width: 150%;
+  background-color: none;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+.box {
+  width: 100%;
+  min-height: 67px;
+  background-color: #fdf6ec;
+}
+
+
+/* TRY 1 MONTH FREE */
+.try {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #15c7d7;
+  min-height: 70px;
+  width: 70%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+/* READY TO WATCH */
+.area h4 {
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+
+/* ENJOY FLEXSTREAM */
+.container1 {
+  width: 100%;
+  min-height: 460px;
+  background-color: black;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+
+/* IMAGE - ENJOY FLEXSTREAM */
+.container1 img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
+  max-width: 100%;
+  height: 350px;
+}
+.container1 {
+  transition: transform 250ms, opacity 400ms;
+}
+.container1:hover {
+  transform: scale(0.9);
+  opacity: 100;
+}
 
 
 
-  
-  
-  
+/* ENJOY, DOWNLOAD, WATCH TEXT */
+.text {
+  color: rgb(255, 247, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: center;
+  align-content: center;
+}
+.text p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.text h1 {
+  font-size: 3.125rem;
+}
+
+
+
+/* line of FREQUENTLY ASKED QUESTIONS */
+.question {
+  width: 100%;
+  min-height: 850px;
+  background-color: #000;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+
+/* FREQUENTLY ASKED QUESTIONS */
+.question h1 {
+  text-align: center;
+  color: rgb(255, 247, 234);
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* text inside FREQUENTLY ASKED QUESTIONS */
+.quest {
+  width: 51%;
+  min-height: 75px;
+  background-color: #303030;
+  color: rgb(255, 247, 234);
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+
+/* box of FREQUENTLY ASKED QUESTIONS */
+.quest .textbox {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+  font-size: 25px;
+  margin: 0 30px;
+  word-spacing: 5px;
+  text-align: left;
+
+}
+
+
+/* near footer EMAIL BAR */
+.search1 {
+  width: 50%;
+  background-color: none;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+.box1 {
+  width: 100%;
+  min-height: 67px;
+}
+
+
+/* near footer TRY 1 MONTH FREE */
+.try1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0fb6c5;
+  min-height: 70px;
+  width: 70%;
+  color: rgb(255, 247, 234);
+  font-size: 30px;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+
+
+/* near footer READY TO WATCH? */
+.question h4 {
+  color: rgb(255, 247, 234);
+  margin-top: -20px;
+  padding-bottom: 40px;
+}
+
+
