@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 3px;
+  text-decoration: none;
 }
 .buttons:hover {
   transition: transform .2s;
