@@ -94,3 +94,9 @@ margin-left: 10px;
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5)
 }
+footer {
+    color: skyblue;
+}
+i {
+    text-decoration: underline;
+}

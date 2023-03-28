@@ -301,5 +301,10 @@ body {
   margin-top: -20px;
   padding-bottom: 40px;
 }
-
+footer {
+  color: skyblue;
+}
+i {
+  text-decoration: underline;
+}
 

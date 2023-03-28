@@ -5,3 +5,9 @@ body {
 .navbar, .navbar-brand {
     color: skyblue;
 }
+footer {
+    color: skyblue;
+}
+i {
+    text-decoration: underline;
+}
