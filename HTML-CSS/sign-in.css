@@ -1,0 +1,10 @@
+body {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/Images/bg.jpg);
+   background-size: cover;
+}
+footer {
+   color: skyblue;
+}
+i {
+   text-decoration: underline;
+}

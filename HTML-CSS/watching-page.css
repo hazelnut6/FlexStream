@@ -1,3 +1,17 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/Images/bg.jpg);
+    background-size: 100%;
+ }
 .navbar, .navbar-brand {
     color: skyblue;
+}
+footer {
+    color: skyblue;
+}
+i {
+    text-decoration: underline;
+}
+
+video {
+    object-fit: cover;
 }

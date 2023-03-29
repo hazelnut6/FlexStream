@@ -18,9 +18,6 @@ background-size: 100% 100%;
     font-size: 35px;
     text-align: center;
 }
-.me-2 {
-    background-color: #FFEBB9;
-}
 #my-list {
     color: black;
     font-size: 33px;
@@ -96,4 +93,10 @@ margin-left: 10px;
 }
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5)
+}
+footer {
+    color: skyblue;
+}
+i {
+    text-decoration: underline;
 }
